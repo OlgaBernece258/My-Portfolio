@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid'
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import background from './assets/image/background.jpg'
-
+import NavBar from './components/NavBar';
 
 export const App = () => {
 
@@ -48,6 +48,8 @@ export const App = () => {
 
   return (
     <div>
+      <NavBar></NavBar>
+
       <StyledHero>
         <Container maxWidth='lg'>
           <Grid container spacing={2} justifyContent='center' alignItems='center' style={{ height: '100%' }}>
@@ -63,13 +65,13 @@ export const App = () => {
               </Typography>
               <Grid container spacing={2} >
                 <Grid item xs={12} md={4} display='flex' justifyContent='center'>
-                  <button>
+                  <button  onClick={() => console.log('Download CV clicked')}> 
                     <DownloadIcon />
                     Download CV
                   </button>
                 </Grid>
                 <Grid item xs={12} md={4} display='flex' justifyContent= 'center'>
-                  <button>
+                  <button onClick={() => console.log('Contact me clicked')}>
                     <EmailIcon />
                     Contact me
                   </button>
