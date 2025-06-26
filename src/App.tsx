@@ -39,6 +39,16 @@ export const App = () => {
     }
   }))
 
+  // Funções para navegação
+  const handleDownloadCV = () => {
+    // Substitua pelo caminho real do seu CV
+    window.open('/src/assets/cv.olga bernece pinto macamo.pdf', '_blank');
+  };
+
+  const handleContactMe = () => {
+    window.location.href = 'mailto:olgabernecepintomacamo@gmail.com';
+  };
+
   const StyledImage = styled('img')(() => ({
     width: '50vh',
     borderRadius: '50%'
@@ -65,13 +75,13 @@ export const App = () => {
               </Typography>
               <Grid container spacing={2} >
                 <Grid item xs={12} md={4} display='flex' justifyContent='center'>
-                  <button  onClick={() => console.log('Download CV clicked')}> 
+                  <button  onClick={handleDownloadCV}> 
                     <DownloadIcon />
                     Download CV
                   </button>
                 </Grid>
                 <Grid item xs={12} md={4} display='flex' justifyContent= 'center'>
-                  <button onClick={() => console.log('Contact me clicked')}>
+                  <button onClick={handleContactMe}>
                     <EmailIcon />
                     Contact me
                   </button>
