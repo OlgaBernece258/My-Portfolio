@@ -4,12 +4,39 @@ import { Container } from '@mui/system'
 import Grid from '@mui/material/Grid'
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
+import background from './assets/image/background.jpg'
+
 
 export const App = () => {
 
   const StyledHero = styled('div')(() => ({
-    background: 'linear-gradient(to right, indigo, purple)',
+    background: 'url(' + background + ') no-repeat center center  / cover',
     height: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    textAlign: 'center',
+    padding: '20px',
+    '& button': {
+      backgroundColor: 'transparent',
+      color: 'white',
+      border: '2px solid white',
+      padding: '10px 20px',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      margin: '10px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px',
+      transition: 'background-color 0.3s, color 0.3s',
+
+      '&:hover': {
+        backgroundColor: 'white',
+        color: '#000'
+      }
+    }
   }))
 
   const StyledImage = styled('img')(() => ({
