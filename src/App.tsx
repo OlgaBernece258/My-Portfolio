@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import background from './assets/image/background.jpg'
 import NavBar from './components/NavBar';
 
+
 export const App = () => {
 
   const StyledHero = styled('div')(() => ({
@@ -46,7 +47,11 @@ export const App = () => {
   };
 
   const handleContactMe = () => {
-    window.location.href = 'mailto:olgabernecepintomacamo@gmail.com';
+
+    window.open('https://www.linkedin.com/in/olga-bernece-pinto-macamo-41458228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank') 
+
+    
+    ;
   };
 
   const StyledImage = styled('img')(() => ({
