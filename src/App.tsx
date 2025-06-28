@@ -7,7 +7,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import background from './assets/image/background.jpg'
 import NavBar from './components/NavBar';
 import { Footer } from './components/footer';
-import { About } from './pages/sections/About/About';
 export const App = () => {
 
   const StyledHero = styled('div')(() => ({
@@ -64,7 +63,7 @@ export const App = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <About></About>
+    
 
 
 
