@@ -6,8 +6,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import background from './assets/image/background.jpg'
 import NavBar from './components/NavBar';
-
-
+import { Footer } from './components/footer';
+import { About } from './pages/sections/About/About';
 export const App = () => {
 
   const StyledHero = styled('div')(() => ({
@@ -40,9 +40,9 @@ export const App = () => {
     }
   }))
 
-  // Funções para navegação
+  
   const handleDownloadCV = () => {
-    // Substitua pelo caminho real do seu CV
+    
     window.open('/src/assets/cv.olga bernece pinto macamo.pdf', '_blank');
   };
 
@@ -64,6 +64,9 @@ export const App = () => {
   return (
     <div>
       <NavBar></NavBar>
+      <About></About>
+
+
 
       <StyledHero>
         <Container maxWidth='lg'>
@@ -96,6 +99,7 @@ export const App = () => {
           </Grid>
         </Container>
       </StyledHero>
+      <Footer/>
     </div>
     
   )
