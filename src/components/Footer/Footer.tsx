@@ -31,11 +31,11 @@ const Footer: React.FC = () => {
             href="https://github.com/OlgaBernece258"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#ffffff", 
+            sx={{ color: "#f2f", 
                 transition: "scale(1.2)",
                 "&: hover":{
                  transform: "scale(1.2)",
-                color: "#000",
+                color: "#f2f",
                 }
 
             }}
@@ -47,11 +47,11 @@ const Footer: React.FC = () => {
             href="https://www.linkedin.com/in/olga-bernece-pinto-macamo-41458228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#ffffff",
+            sx={{ color: "#f2f",
                 transition: "scale(1.2)",
                 "&: hover": {
                  transform: "scale(1.2)",
-                color: "#000",
+                color: "#f2f",
                 }
              }}
           >
@@ -62,11 +62,11 @@ const Footer: React.FC = () => {
             href="https://www.facebook.com/public/Olga-Berne%C3%A7e-A-Peregrina"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#ffffff",
+            sx={{ color: "#f2f",
                 transition: "scale(1.2)",
                 "&: hover": {
                  transform: "scale(1.2)",
-                color: "#000",
+                color: "#f4f",
                 }
              }}
           >

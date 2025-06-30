@@ -10,21 +10,21 @@ import { styled } from '@mui/material';
 
 export const StyledNavLink = styled("a")(({ theme }) => ({
     textDecoration: "none",
-    color: "inherit",
+    color: "#f2f",
     fontWeight: 500,
     fontSize: '1rem',
     padding: '6px 12px',
     position: 'relative',
     transition: 'color 0.3s ease',
     '&:hover': {
-        color: theme.palette.secondary.main,
+        color: "#f2f",
     },
     '&::after': {
         content: '""',
         display: 'block',
         width: 0,
         height: 2,
-        background: theme.palette.secondary.main,
+        background: "#f2f",
         transition: 'width 0.3s',
         position: 'absolute',
         bottom: 0,

@@ -1,8 +1,8 @@
 import { styled } from "@mui/material";
 import Button from "@mui/material/Button";
 
-const BoldBlackButton = styled(Button)(({ theme }) => ({
-  backgroundColor: '#000',
+const BoldBlackButton = styled(Button)(() => ({
+  backgroundColor: '#f2f',
   color: '#fff',
   padding: '12px 28px',
   borderRadius: '30px',
@@ -15,7 +15,7 @@ const BoldBlackButton = styled(Button)(({ theme }) => ({
   gap: '8px',
   transition: 'all 0.3s ease-in-out',
   '&:hover': {
-    backgroundColor: '#111',
+    backgroundColor: '#000',
     transform: 'scale(1.05)',
     boxShadow: '0 6px 18px rgba(0, 0, 0, 0.5)',
   },

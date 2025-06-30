@@ -8,8 +8,8 @@ const AboutSection: React.FC = () => {
         padding: "10px 10px",
         textAlign: "center",
         marginBottom: "10px",
-        backgroundColor: "#fde",
-         color: theme.palette.getContrastText("#ff4"),
+        backgroundColor: "#f2f",
+         color: theme.palette.getContrastText("#000"),
         '&:hover': {
             backgroundColor: theme.palette.secondary.light
         }
@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
 
                     <Grid item xs={9} md={2.5}>
                         <AnimationComponent moveDirection="left">
-                            <StyledCard variant="outlined">
+                            <StyledCard variant="outlined" color="#000">
                                 <SchoolIcon />
                                 <Typography textAlign="center" fontWeight={600}>Education</Typography>
                                 <Typography textAlign="center">Bytes4future</Typography>
