@@ -8,10 +8,34 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { styled } from '@mui/material';
 
-export const StyledNavLink = styled("a")(() => ({
+export const StyledNavLink = styled("a")(({ theme }) => ({
     textDecoration: "none",
-    color: "inherit"
+    color: "inherit",
+    fontWeight: 500,
+    fontSize: '1rem',
+    padding: '6px 12px',
+    position: 'relative',
+    transition: 'color 0.3s ease',
+    '&:hover': {
+        color: theme.palette.secondary.main,
+    },
+    '&::after': {
+        content: '""',
+        display: 'block',
+        width: 0,
+        height: 2,
+        background: theme.palette.secondary.main,
+        transition: 'width 0.3s',
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+    },
+    '&:hover::after': {
+        width: '100%',
+    }
 }));
+
+
 
 export const StyledMobileToolbar = styled(Toolbar)(({ theme }) => ({
     [theme.breakpoints.up('xs')]: {

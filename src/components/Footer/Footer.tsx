@@ -17,7 +17,7 @@ const fadeInUp = keyframes`
 
 // 📦 Container animado do footer
 const AnimatedFooter = styled(Box)`
-  background-color: #f489;
+  background-color: #000;
   animation: ${fadeInUp} 1s ease-in-out;
 `
 
@@ -31,11 +31,11 @@ const Footer: React.FC = () => {
             href="https://github.com/OlgaBernece258"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#fff", 
+            sx={{ color: "#ffffff", 
                 transition: "scale(1.2)",
                 "&: hover":{
                  transform: "scale(1.2)",
-                color: "#ffe0ec",
+                color: "#000",
                 }
 
             }}
@@ -47,7 +47,13 @@ const Footer: React.FC = () => {
             href="https://www.linkedin.com/in/olga-bernece-pinto-macamo-41458228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#fff" }}
+            sx={{ color: "#ffffff",
+                transition: "scale(1.2)",
+                "&: hover": {
+                 transform: "scale(1.2)",
+                color: "#000",
+                }
+             }}
           >
             <LinkedInIcon />
           </IconButton>
@@ -56,13 +62,19 @@ const Footer: React.FC = () => {
             href="https://www.facebook.com/public/Olga-Berne%C3%A7e-A-Peregrina"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ color: "#fff" }}
+            sx={{ color: "#ffffff",
+                transition: "scale(1.2)",
+                "&: hover": {
+                 transform: "scale(1.2)",
+                color: "#000",
+                }
+             }}
           >
             <FacebookIcon />
           </IconButton>
         </Box>
-        <Typography textAlign="center" sx={{ color: "#fff" }}>
-          © {new Date().getFullYear()} Olga Macamo - Frontend Developer – All rights reserved
+        <Typography textAlign="center" sx={{ color: "#ffffff" }}>
+          © {new Date().getFullYear()} Olga Macamo – All rights reserved
         </Typography>
       </Container>
     </AnimatedFooter>

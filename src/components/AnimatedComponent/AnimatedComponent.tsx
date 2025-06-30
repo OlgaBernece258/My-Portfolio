@@ -10,19 +10,19 @@ interface AnimationComponentProps {
 
 const moveFromLeftToRight = keyframes`
 0% {
-    transform: translateX(-20vw);
+    transform: translateX(-100vw);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100);
   }
     `
 
 const moveFromRightToLeft = keyframes`
 0% {
-    transform: translateX(20vw);
+    transform: translateX(-100vw);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100);
   }
     `
 

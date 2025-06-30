@@ -77,7 +77,7 @@ const AnimatedButton = styled(StyledButton)`
   }
 `
 
-// 📥 Ações
+
 const handleDownload = () => {
   window.open('/src/assets/cv.olga bernece pinto macamo.pdf', '_blank')
 }
@@ -106,8 +106,8 @@ const HeroSection: React.FC = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={8}>
-            <Typewriter text="Olga Macamo" delay={200} variant="h1" color="primary.contrastText" stop= "200"  sx={{ fontFamily: "Helvetica" }} />
-            <Typewriter text="I'm a Junior Fullstack Developer" delay={400} variant="h2" color="primary.contrastText"  sx={{ fontFamily: "'Poppins', sans-serif" }} />
+            <Typewriter text="Olga Macamo" delay={200} variant="h1" color="#f2f5" stop= "200"  sx={{ fontFamily: "Helvetica" }} />
+            <Typewriter text="I'm a Junior Fullstack Developer" delay={300} variant="h2" color="primary.contrastText"  sx={{ fontFamily: "'Poppins', sans-serif" }} />
             <Box mt={3}>
               <Grid container justifyContent="center" spacing={2}>
                 <Grid item xs={12} md="auto">

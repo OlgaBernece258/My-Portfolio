@@ -20,17 +20,17 @@ const ProjectsSection: React.FC = () => {
             codeURL: "https://www.linkedin.com/in/olga-bernece-pinto-macamo-41458228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
         {
-            title: "Project Exemple",
-            subtitle: "Jul 2023 - Dez 2023",
+            title: "Spotdados",
+            subtitle: "May 2025",
             srcImg: "/src/assets/images/project-financas.png",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum. Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris. Phasellus a ultrices elit. Curabitur ut diam eu orci auctor pretium.",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
+            technologies: "Technologies: JavaScript, HTML, CSS, ",
             websiteURL: "https://trello.com/",
             codeURL: "https://github.com/",
         },
         {
-            title: "Project Craze Maze",
-            subtitle: "Jul 2019 - May 2019",
+            title: "E-commerce",
+            subtitle: "Jun 2025",
             srcImg: "/src/assets/images/project1-craze-maze.gif",
             description: "Game to escape the maze, but not only that. An algorithm has been created that randomly generates a new maze each time the game is started. In this game, the user can use the keyboard keys to move until they find the flag and win the game",
             technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
@@ -65,13 +65,13 @@ const ProjectsSection: React.FC = () => {
                                     description={project.description}
                                     technologies={project.technologies}codeURL={project.codeURL}
                                 />
-                            </AnimationComponent>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Container>
-        </StyledExperience>
-    )
-}
+                                     </AnimationComponent>
+                                     </Grid>
+                                     ))}
+                                    </Grid>
+                                    </Container>
+                                    </StyledExperience>
+                     )
+                      }
 
 export default ProjectsSection
