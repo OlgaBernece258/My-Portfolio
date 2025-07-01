@@ -2,6 +2,8 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
 import type { ProjectCardProps } from "../../../components/ProjectCard/ProjectCard";
 import AnimationComponent from "../../../components/AnimatedComponent/AnimatedComponent";
+import { href } from "react-router-dom";
+import { Description } from "@mui/icons-material";
 
 const ProjectsSection: React.FC = () => {
 
@@ -11,41 +13,76 @@ const ProjectsSection: React.FC = () => {
     }));
 
     const projects = [
+
         {
-            title: "Mongoose Bank",
+            title: "E-commerce",
+            subtitle: "Jun 2025",
+            srcImg: "/src/assets/image/E-comerce.png",
+            description: "The project consists of an E-commerce system.",
+            technologies: "Technologies: React.js, Express, TypeScript, MongoDB",
+            codeURL: "https://github.com/Jay-Ubisse/b4f-2-final-project",
+        },
+          {
+            title: "Mini Movie Platform",
+            subtitle: "Apr 2025",
+            srcImg: "/src/assets/image/MiniPlataforma.png",
+            description: "The application allows users to create, edit, delete, list, and view movie details. The data is stored in an array of objects, simulating a database",
+            technologies: "Technologies: JavaScript, HTML, CSS.",
+            codeURL: "https://github.com/Jay-Ubisse/mini-plataforma-filmes-b4f",
+        },
+           {
+            title: "Spotdados",
+            subtitle: "May 2025",
+            srcImg: "/src/assets/image/1751376015252.jpg",
+            description: "Collaborative mobile project developed to present user listening history data from a music application",
+            technologies: "Technologies: React.js, Typescript, TailwindCss, react-router.",
+            codeURL: "https://github.com/isaneyde/spotdados",
+        },
+        {
+            title: "Mongoose-Bank",
             subtitle: "jun 2025",
             srcImg: "/src/assets/image/mongosse.jpg",
-            description: "Sistema de Gestão Bancária, Projecto executado em equipe no Hackthon do Bytes4future com objectivo de desenvolver um sistema para um banco, para optimizar a gestão de filas, verificação do estado no sistema bancário por parte dos clientes e redução do nível de espera desnecessária. ",
+            description: "Bank Management System, a team project developed during the Bytes4Future Hackathon. The goal was to create a system for a bank to optimize queue management, allow clients to check their service status in real-time, and reduce overall wait times.",
             technologies: "Technologies: TypeScript, React.js, React Router, Tailwind CSS, Shadcn UI, Mongoose, Dotenv, MongoDB, Express, Node.js",
-            codeURL: "https://www.linkedin.com/in/olga-bernece-pinto-macamo-41458228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            codeURL: "https://github.com/isaneyde/banco-mongoose",
         },
         {
             title: "Task-manager",
             subtitle: "May 2025",
             srcImg: "/src/assets/image/taskmanager.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum. Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris. Phasellus a ultrices elit. Curabitur ut diam eu orci auctor pretium.",
+            description: "Gestor de tarefas do dia a dia.",
             technologies: "Technologies: React.js, Typescript, TailwindCss ",
-            websiteURL: "https://trello.com/",
-            codeURL: "https://github.com/",
+            codeURL: "https://github.com/OlgaBernece258/tarefas-olma",
         },
-        {
-            title: "E-commerce",
-            subtitle: "Jun 2025",
-            srcImg: "/src/assets/images/project1-craze-maze.gif",
-            description: "Game to escape the maze, but not only that. An algorithm has been created that randomly generates a new maze each time the game is started. In this game, the user can use the keyboard keys to move until they find the flag and win the game",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
-            codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
+           {
+            title: "Portfolio-2",
+            subtitle: "jun 2025",
+            srcImg: "/src/assets/image/Captura de ecrã 2025-07-01 153622.png",
+            description: "My Portfolio",
+            technologies: "Technologies: React.js, Typescript, TailwindCss, React-router, Material UI,",
+            codeURL: "https://github.com/OlgaBernece258/My-Portfolio",
         },
-        {
-            title: "Project Blotting",
-            subtitle: "Jul 2019 - May 2019",
-            srcImg: "/src/assets/images/project2-blotting.png",
-            description: "Game to escape the maze, but not only that. An algorithm has been created that randomly generates a new maze each time the game is started. In this game, the user can use the keyboard keys to move until they find the flag and win the game",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
-            codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
+            
+            {
+            title: "Portfolio-1",
+            subtitle: "Mar 2025",
+            srcImg: "/src/assets/image/Captura de ecrã 2025-07-01 154735.png",
+            description: "My Portfolio",
+            technologies: "Technologies: HTML, JavaScript, CSS.",
+            codeURL: "https://github.com/OlgaBernece258/My-Portfolio",
         },
+            {
+            title: "LandingPage",
+            subtitle: "Apr 2025",
+            srcImg: "/src/assets/image/edm.png",
+            description: "This project is currently in progress.",
+            technologies: "Technologies: React.js, JavaScript, Css, Material UI,",
+            codeURL: "https://github.com/OlgaBernece258/landing-page",
+        },
+        
+        
+      
+      
     ]
 
     return (

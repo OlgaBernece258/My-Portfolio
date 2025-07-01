@@ -68,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         color: theme.palette.primary.contrastText,
         padding: "20px",
         '&:hover': {
-            backgroundColor: "#f2f"
+            backgroundColor: "#000"
         }
     }));
 
@@ -88,9 +88,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 {technologies}
             </Typography>
             <Grid container spacing={1} pt={2}>
-                <Grid item xs={6}>
-                    <StyledButton onClick={() => window.open(codeURL)}>View Project</StyledButton>
-                </Grid>
                 <Grid item xs={6}>
                     <StyledButton onClick={() => window.open(codeURL)}>View Code</StyledButton>
                 </Grid>
