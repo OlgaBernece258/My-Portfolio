@@ -1,9 +1,8 @@
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Container, Typography, styled } from "@mui/material";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
 import type { ProjectCardProps } from "../../../components/ProjectCard/ProjectCard";
+import {GridLegacy} from "@mui/material";
 import AnimationComponent from "../../../components/AnimatedComponent/AnimatedComponent";
-import { href } from "react-router-dom";
-import { Description } from "@mui/icons-material";
 
 const ProjectsSection: React.FC = () => {
 
@@ -91,21 +90,22 @@ const ProjectsSection: React.FC = () => {
                 <Box id="projects" pt={5} pb={3}>
                     <Typography variant="h2" textAlign="center" color="primary.contrastText">Projects</Typography>
                 </Box>
-                <Grid container spacing={5} pb={3}>
+                <GridLegacy container spacing={5} pb={3}>
                     {projects.map((project: ProjectCardProps, index: number) => (
-                        <Grid item md={6} key={index}>
+                        <GridLegacy item md={6} key={index}>
                             <AnimationComponent moveDirection={index % 2 == 0 ? "right" : "left"}>
                                 <ProjectCard
                                     title={project.title}
                                     subtitle={project.subtitle}
                                     srcImg={project.srcImg}
                                     description={project.description}
-                                    technologies={project.technologies}codeURL={project.codeURL}
+                                    technologies={project.technologies}
+                                    codeURL={project.codeURL}
                                 />
-                                     </AnimationComponent>
-                                     </Grid>
-                                     ))}
-                                    </Grid>
+                            </AnimationComponent>
+                        </GridLegacy>
+                    ))}
+                </GridLegacy>
                                     </Container>
                                     </StyledExperience>
                      )
